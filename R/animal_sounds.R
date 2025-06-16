@@ -1,5 +1,7 @@
 #' Print the Sound that an Animal Makes
 #'
+#' A wrapper around [base::paste0()].
+#'
 #' @param animal A character string giving the animal
 #' @param sound A character string giving the sound
 #'

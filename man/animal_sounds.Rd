@@ -15,7 +15,7 @@ animal_sounds(animal, sound)
 A string giving the sound the animal makes
 }
 \description{
-Print the Sound that an Animal Makes
+A wrapper around \code{\link[base:paste]{base::paste0()}}.
 }
 \examples{
 animal_sounds("cow", "moo")

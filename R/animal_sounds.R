@@ -3,7 +3,7 @@
 #' @param animal A character string giving the animal
 #' @param sound A character string giving the sound
 #'
-#' @returns A printed string giving the sound the animal makes
+#' @returns A string giving the sound the animal makes
 #' @export
 #'
 #' @examples

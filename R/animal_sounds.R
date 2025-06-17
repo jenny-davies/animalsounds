@@ -22,7 +22,6 @@ animal_sounds <- function(animal, sound) {
 }
 
 # function to validate inputs
-#' Helper Function to Validate Character Arguments
 validate_character_args <- function(arg_to_check, arg_length) {
   if(!rlang::is_character(arg_to_check, n = arg_length)) {
     cli::cli_abort(

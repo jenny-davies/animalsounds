@@ -12,19 +12,22 @@
 #' animal_sounds("cow", "moo")
 animal_sounds <- function(animal, sound) {
   # sound must be a character vector of length 1
-  if (!rlang::is_character(sound, n = 1)) {
-    cli::cli_abort(
-      c("{.var sound} must be a single string!",
-        "i" = "It was {.type {sound}} of length {length(sound)} instead.")
-    )
-  }
+  validate_character_args(arg_to_check = sound,
+                          arg_length = 1)
 
-  if (!rlang::is_character(animal, n = 1)) {
-    cli::cli_abort(
-      c("{.var animal} must be a single string!",
-        "i" = "It was {.type {animal}} of length {length(animal)} instead.")
-    )
-  }
+  validate_character_args(arg_to_check = animal,
+                          arg_length = 1)
 
   paste0("The ", animal, " says ", sound, "!")
+}
+
+# function to validate inputs
+#' Helper Function to Validate Character Arguments
+validate_character_args <- function(arg_to_check, arg_length) {
+  if(!rlang::is_character(arg_to_check, n = arg_length)) {
+    cli::cli_abort(
+      c("{.var arg_to_check} must be a single string!",
+        "i" = "It was {.type {arg_to_check}} of length {length(arg_to_check)} instead.")
+    )
+  }
 }

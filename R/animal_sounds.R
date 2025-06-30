@@ -26,7 +26,8 @@ validate_character_args <- function(arg_to_check, arg_length) {
   if(!rlang::is_character(arg_to_check, n = arg_length)) {
     cli::cli_abort(
       c("{.var arg_to_check} must be a single string!",
-        "i" = "It was {.type {arg_to_check}} of length {length(arg_to_check)} instead.")
+        "i" = "It was {.type {arg_to_check}} of length {length(arg_to_check)} instead."),
+      class = "error_not_single_string"
     )
   }
 }

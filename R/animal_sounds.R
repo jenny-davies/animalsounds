@@ -10,15 +10,25 @@
 #'
 #' @examples
 #' animal_sounds("cow", "moo")
-animal_sounds <- function(animal, sound) {
-  # sound must be a character vector of length 1
-  validate_character_args(arg_to_check = sound,
-                          arg_length = 1)
+animal_sounds <- function(animal,
+                          sound = NULL) {
 
+  # animal must be a character vector of length 1
   validate_character_args(arg_to_check = animal,
                           arg_length = 1)
 
-  paste0("The ", animal, " says ", sound, "!")
+  if(is.null(sound)) {
+
+    paste0("The ", animal, " makes no sound.")
+
+  } else {
+
+    # sound must be a character vector of length 1
+    validate_character_args(arg_to_check = sound,
+                            arg_length = 1)
+
+    paste0("The ", animal, " says ", sound, "!")
+  }
 }
 
 # function to validate inputs

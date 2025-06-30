@@ -18,3 +18,11 @@ test_that("animal_sounds handles invalid inputs", {
   expect_error(animal_sounds(factor("cat"), "miaow"))
 
 })
+
+test_that("animal_sounds handles animals without sound", {
+
+  giraffe <- animal_sounds("giraffe")
+
+  expect_equal(giraffe, "The giraffe makes no sound.")
+
+})

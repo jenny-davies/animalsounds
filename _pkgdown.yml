@@ -1,4 +1,5 @@
 url: https://jenny-davies.github.io/animalsounds/
 template:
   bootstrap: 5
+  light-switch: true
 

@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.1.3
+pkgdown_sha: ~
+articles:
+  animal_sounds: animal_sounds.html
+last_built: 2025-07-08T11:08Z
+urls:
+  reference: https://jenny-davies.github.io/animalsounds/reference
+  article: https://jenny-davies.github.io/animalsounds/articles

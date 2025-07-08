@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://github.com/jenny-davies/animalsounds
+URL: https://github.com/jenny-davies/animalsounds, https://jenny-davies.github.io/animalsounds/
 BugReports: https://github.com/jenny-davies/animalsounds/issues
 Imports: 
     cli,

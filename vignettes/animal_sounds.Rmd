@@ -1,0 +1,32 @@
+---
+title: "animal_sounds"
+author: "Jenny Davies"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{animal_sounds}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Animal Sounds Test Package
+
+This package contains a single function, `animal_sounds`. It was developed as part of the Forwards R Package Development [workshops](https://forwards.github.io/package-dev/).
+
+The `animal_sounds` function takes two arguments:
+
+-   `animal`: character, the name of an animal
+-   `sound`: character, the sound made by the animal
+
+```{r setup}
+library(animalsounds)
+```
+
+```{r example1, echo = TRUE, eval = TRUE}
+animal_sounds("cow", "moo")
+```
+
+The `sound` argument is optional.
+
+```{r example2, echo = TRUE, eval = TRUE}
+animal_sounds("polar bear")
+```

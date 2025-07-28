@@ -1,6 +1,6 @@
 Package: animalsounds
 Title: A Test Package Created During Package Development Workshops
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Jenny", "Davies", , "jennyedavies@outlook.com", role = c("aut", "cre"))
 Description: A test package created during the R Forwards workshops on package development.

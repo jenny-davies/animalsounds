@@ -3,7 +3,7 @@
 \docType{data}
 \name{farm_animals}
 \alias{farm_animals}
-\title{Example Data}
+\title{Data for Animal Sounds}
 \format{
 A dataframe with 3 rows and two columns
 \describe{

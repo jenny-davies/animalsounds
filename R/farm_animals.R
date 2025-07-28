@@ -1,4 +1,4 @@
-#' Example Data
+#' Data for Animal Sounds
 #'
 #' A test dataset with animals and the sound they make
 #'

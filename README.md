@@ -17,6 +17,6 @@ You can install the development version of animalsounds from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("jenny-davies/animalsounds")
+# install.packages("devtools")
+devtools::install_github("jenny-davies/animalsounds")
 ```
